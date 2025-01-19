@@ -8,7 +8,7 @@ const blogs = [
     title: "A year in color trends",
     subtitle:
       "Create a blog post subtitle that summarizes your post in a few short, punchy sentences and...",
-    image: "/color-trends.jpg",
+    image: "/blog1.webp",
     date: "Mar 21, 2023",
     readTime: "2 min read",
     views: 0,
@@ -20,7 +20,7 @@ const blogs = [
     title: "Why wireframes are always a better idea",
     subtitle:
       "Create a blog post subtitle that summarizes your post in a few short, punchy sentences and...",
-    image: "/wireframes.jpg",
+    image: "/blog2.jpg",
     date: "Mar 21, 2023",
     readTime: "1 min read",
     views: 0,
@@ -32,7 +32,7 @@ const blogs = [
     title: "The importance of the designer notebook",
     subtitle:
       "Create a blog post subtitle that summarizes your post in a few short, punchy sentences and...",
-    image: "/notebook.jpg",
+    image: "/blog3.jpeg",
     date: "Mar 21, 2023",
     readTime: "2 min read",
     views: 0,
@@ -44,7 +44,7 @@ const blogs = [
     title: "Why every web designer needs inspiration",
     subtitle:
       "Create a blog post subtitle that summarizes your post in a few short, punchy sentences and...",
-    image: "/web-inspiration.jpg",
+    image: "/blog4.jpg",
     date: "Mar 21, 2023",
     readTime: "1 min read",
     views: 0,
@@ -61,9 +61,10 @@ export default function Home() {
         <Image
           src="/background.jpg"
           alt="Background"
-          layout="fill"
-          objectFit="cover"
+          width={1920}
+          height={1080}
           className="opacity-70"
+          style={{ objectFit: "cover" }}
         />
       </div>
 
@@ -114,10 +115,12 @@ export default function Home() {
               key={blog.id}
               className="bg-white border rounded-lg shadow-sm overflow-hidden"
             >
-              <img
+              <Image
                 src={blog.image}
                 alt={blog.title}
                 className="w-full h-48 object-cover"
+                width={200}
+                height={150}
               />
               <div className="p-4">
                 <div className="text-sm text-gray-500 flex items-center justify-between">
