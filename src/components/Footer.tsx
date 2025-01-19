@@ -8,7 +8,7 @@ export default function Footer() {
         <div>
           <h3 className="text-lg font-semibold mb-4">ABOUT FEEDs & GRIDs</h3>
           <p className="text-sm leading-relaxed">
-            I'm a paragraph. Click here to add your own text and edit me. It’s
+            I&apos;m a paragraph. Click here to add your own text and edit me. It’s
             easy. Just click “Edit Text” or double-click me to add your own
             content and make changes to the font.
           </p>
@@ -55,7 +55,7 @@ export default function Footer() {
         <div>
           <h3 className="text-lg font-semibold mb-4">SUBSCRIBE</h3>
           <p className="text-sm leading-relaxed mb-4">
-            I'm a paragraph. Click here to add your own text and edit me. It’s
+            I&apos;m a paragraph. Click here to add your own text and edit me. It&apos;s
             easy.
           </p>
           <form className="space-y-4">

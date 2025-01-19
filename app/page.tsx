@@ -1,4 +1,5 @@
 import Footer from "@/src/components/Footer";
+import { ThemeToggle } from "@/src/components/ThemeToggle";
 import Image from "next/image";
 
 const blogs = [
@@ -69,6 +70,7 @@ export default function Home() {
       {/* Navbar */}
       <nav className="flex justify-between items-center px-10 py-6">
         <h1 className="text-white text-lg font-semibold">FEEDs & GRIDs</h1>
+        <ThemeToggle />
         <div className="flex space-x-8">
           <a href="#" className="text-white text-sm hover:underline">
             HOME
